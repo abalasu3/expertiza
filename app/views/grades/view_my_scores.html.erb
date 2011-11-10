@@ -5,7 +5,7 @@
 <%= render :partial => 'grades/participant',
                        :locals => {:prefix => 'user', 
                                    :team => false,
-                                   :pscore => @participant.get_scores(@questions)} %>                                                                                   
+                                   :pscore => @participant.get_scores_given(@questions)} %>
 </TABLE>
 <BR/>
 <a href="javascript:window.history.back()">Back</a>   

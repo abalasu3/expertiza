@@ -212,7 +212,7 @@ class Assignment < ActiveRecord::Base
      return mappings     
   end
   
-  def get_scores(questions)
+  def get_scores_given(questions)
     scores = Hash.new
    
     scores[:participants] = Hash.new    

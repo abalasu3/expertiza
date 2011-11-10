@@ -1,0 +1,16 @@
+<h1>Editing hyperlink</h1>
+
+<% form_for(@hyperlink) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :[submitted_hyperlink %><br />
+    <%= f.text_field :[submitted_hyperlink %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @hyperlink %> |
+<%= link_to 'Back', hyperlinks_path %>

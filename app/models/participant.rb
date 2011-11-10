@@ -52,7 +52,7 @@ class Participant < ActiveRecord::Base
      self.destroy
   end
 
-  def get_topic_string
+  def get_topic_name
     if topic.nil? or topic.topic_name.empty?
       return "<center>&#8212;</center>"
     end

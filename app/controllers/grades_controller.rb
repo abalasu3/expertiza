@@ -15,7 +15,7 @@ class GradesController < ApplicationController
       @questions[questionnaire.symbol] = questionnaire.questions
     }
 
-    @scores = @assignment.get_scores(@questions)
+    @scores = @assignment.get_scores_given(@questions)
   end
 
   def view_my_scores
@@ -66,7 +66,7 @@ class GradesController < ApplicationController
       @questions[questionnaire.symbol] = questionnaire.questions
     }
 
-    @scores = @participant.get_scores(@questions)
+    @scores = @participant.get_scores_given(@questions)
   end
 
   def instructor_review

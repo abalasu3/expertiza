@@ -111,7 +111,7 @@
                 <td><b><%= link_to participant.assignment.name, :action => 'view', :id => participant %></b></td>
                 <td>
                   <% participant.get_course_string %></td>
-                <td><%= participant.get_topic_string %></td>
+                <td><%= participant.get_topic_name %></td>
                 <td><%= participant.assignment.get_current_stage(participant.topic_id) %></td>
                 <td><%= participant.assignment.get_stage_deadline(participant.topic_id) %></td>
                 <td align=center>

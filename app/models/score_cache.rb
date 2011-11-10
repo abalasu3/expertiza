@@ -48,9 +48,9 @@ class ScoreCache < ActiveRecord::Base
     # scores that participant1 has given
     if(@map_type == "TeamReviewResponseMap")
       team = Team.find(@contributor_id)
-      @allscores = team.get_scores( @questions)
+      @allscores = team.get_scores_given( @questions)
     else
-      @allscores = @participant1.get_scores( @questions)
+      @allscores = @participant1.get_scores_given( @questions)
     end
     
     @scorehash = get_my_scores(@allscores, @map_type) 
